@@ -1,5 +1,8 @@
-package com.josh.java.oopsassigment;
+package com.josh.java.assignment.oop.q1;
 
+import lombok.Data;
+
+@Data
 public class Account {
 	private String id;
 	private String name;
@@ -16,26 +19,14 @@ public class Account {
 		this.balance = balance;
 	}
 
-	public String getID() {
-		return this.id;
-	}
-
-	public String getName() {
-		return this.name;
-	}
-
-	public int getBalance() {
-		return this.balance;
-	}
-
 	public int credit(int amount) {
-		balance = balance + amount;//balance credited
+		balance = balance + amount;// balance credited
 		return balance;
 	}
 
 	public int debit(int amount) {
 		if (amount <= balance) {
-			balance = balance - amount;//balance debited
+			balance = balance - amount;// balance debited
 		} else {
 			System.out.println("Ammount exceeded balance");
 		}
@@ -44,7 +35,7 @@ public class Account {
 
 	public int transferTo(Account name, int amount) {
 		if (amount <= balance) {
-			name.balance = name.balance + amount;//balance transfered to the person
+			name.balance = name.balance + amount;// balance transfered to the person
 			balance = balance - amount;
 		}
 		return balance;

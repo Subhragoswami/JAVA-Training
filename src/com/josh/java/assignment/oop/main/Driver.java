@@ -1,18 +1,20 @@
-package com.josh.java.oopsassigment;
+package com.josh.java.assignment.oop.main;
 
 import java.util.Scanner;
+import com.josh.java.assignment.oop.q1.*;
+import com.josh.java.assignment.oop.q2.*;
 
-public class MainDriver {
+public class Driver {
 	public static void main(String[] args) {
-		Scanner scn = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		System.out.println("1. Account");
 		System.out.println("2. Person");
 		System.out.print("Enter number to execute:");
-		int input = scn.nextInt();
+		int input = scanner.nextInt();
 		switch (input) {
 		case 1:
-			Person p = new Staff("Subhra", "West Bengal", "KKI", 543638);
-			System.out.println(p);
+			Person person = new Staff("Subhra", "West Bengal", "KKI", 543638);
+			System.out.println(person);
 			break;
 		case 2:
 			Account ac = new Account("647", "Subhra", 5000);
