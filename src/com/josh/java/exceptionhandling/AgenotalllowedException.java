@@ -1,7 +1,7 @@
 package com.josh.java.exceptionhandling;
 
-public class AgenotalllowedException extends RuntimeException {//uncheked exception extends Runtimexception
-	AgenotalllowedException(String msg) {
+public class AgenNotAlllowedException extends RuntimeException {//uncheked exception extends Runtimexception
+	AgenNotAlllowedException(String msg) {
 		super(msg);
 	}
 }
