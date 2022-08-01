@@ -3,8 +3,12 @@ package com.josh.java.exceptionhandling;
 import java.util.Scanner;
 
 
+package com.josh.java.exceptionhandling;
+
+import java.util.Scanner;
+
 public class ExceptionHandling {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ArithmeticException {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter Two Numbers");
 		int firstnum = scanner.nextInt();
@@ -17,18 +21,15 @@ public class ExceptionHandling {
 			arr[7] = temp;
 		} catch (ArrayIndexOutOfBoundsException a) {
 			System.out.println("Index is more than size.");
-		} catch (ArithmeticException e) {
-			e.printStackTrace();
 		} finally {
 			System.out.println("finally block is always executed");
-
 		}
 
 		System.out.println("enter age to enter");
 		int age = scanner.nextInt();
 
 		if (age < 18) {
-			AgenotalllowedException a = new AgenotalllowedException("you are not allowed to enter");
+			AgeNotAlllowedException a = new AgeNotAlllowedException("you are not allowed to enter");
 			throw a;
 		} else {
 			System.out.println("you are allowed to enter");
