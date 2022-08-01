@@ -12,9 +12,4 @@ public class Staff extends Person {
 		this.school = school;
 		this.pay = pay;
 	}
-
-	@Override
-	public String toString() {
-		return "Staff [ name=" + getName() + ", address=" + getAddress() + ", school=" + school + ", pay=" + pay + " ]";
-	}
 }
