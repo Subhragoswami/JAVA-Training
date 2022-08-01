@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Value;
 
 
-@Data//
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 
